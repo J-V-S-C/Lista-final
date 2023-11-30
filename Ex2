@@ -1,0 +1,20 @@
+/*Chico tem 1,70m e cresce 2 cenqmetros por ano, enquanto Juca tem 1,10m e cresce 3 cenqmetros
+por ano. Construir um programa em C que calcule e imprima quantos anos serão necessários para
+que Juca seja maior que Chico.*/
+
+#include <stdio.h>
+#include <locale.h>
+
+main()
+{
+setlocale(LC_ALL, "portuguese");
+int c, C=170, J=110;
+do{
+C=C+2;
+J=J+3;
+c++;
+}while(C>J);
+
+printf("Serão necessários %d anos para que Juca seja maior que Chico", c);
+
+}
